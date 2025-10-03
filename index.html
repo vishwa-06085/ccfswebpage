@@ -3,26 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Chidambaram Covering and Fancy Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" size="512x512" href="icon.png">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-        <img src="logo.png" alt="Store Logo" id="logo" width="250" height="250">
+        <div class="header-top">
+            <div class="logo-container">
+                <img src="logo.png" alt="Store Logo" id="logo" width="250" height="250">
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-search">
+                    <i class="fas fa-search"></i>
+                    <div class="popup search-popup">
+                        <h3>Search </h3>
+                        <div class="popup-content">
+                            <input type="text" placeholder="Search products..." class="search-input">
+                            <button class="search-btn">Search</button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="icon-user">
+                    <i class="fas fa-user"></i>
+                    <div class="popup user-popup">
+                        <h3>Login/User </h3>
+                        <div class="popup-content">
+                            <div class="login-form">
+                                <input type="text" placeholder="Username" class="form-input">
+                                <input type="password" placeholder="Password" class="form-input">
+                                <button class="login-btn">Login</button>
+                                <button class="register-btn">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="icon-clock">
+                    <i class="fas fa-clock"></i>
+                    <div class="popup recent-popup">
+                        <h3>Recent Items </h3>
+                        <div class="popup-content">
+                            <div class="popup-item">Aligator & Tictac Clips</div>
+                            <div class="popup-item">Banana Clips</div>
+                            <div class="popup-item">Broad Kada Bangle</div>
+                            <div class="popup-item">Bangles</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="icon-heart">
+                    <i class="fas fa-heart"></i>
+                    <div class="popup wishlist-popup">
+                        <h3>Wishlist </h3>
+                        <div class="popup-content">
+                            <div class="popup-item">Aligator & Tictac Clips</div>
+                            <div class="popup-item">Banana Clips</div>
+                            <div class="popup-item">Broad Kada Bangle</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="icon-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="popup cart-popup">
+                        <h3>Shopping Cart </h3>
+                        <div class="popup-content">
+                            <div class="popup-item">Aligator & Tictac Clips - Rs. 150</div>
+                            <div class="popup-item">Banana Clips - Rs. 200</div>
+                            <div class="cart-total">Total: Rs. 350</div>
+                            <button class="checkout-btn">Checkout</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <hr>
-        <nav>
+        
+        <!-- Main Navigation from your code -->
+        <nav class="main-nav menu">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#best-sellers">Best Sellers</a></li>
+                <li><a href="#under-2000">Under Rs. 2000</a></li>
                 <li><a href="#about">About Us</a></li>
             </ul>
         </nav>
-       <hr>
+        <!-- Category Navigation from your screenshot -->
+        <nav class="category-nav">
+            <ul>
+                <li><a href="#">Aligator & Tictac Clips</a></li>
+                <li><a href="#">Banana Clips</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Bangles</a></li>
+                <li><a href="#">Broad Kada Bangle</a></li>
+                <li><a href="#">Under Rs. 2000</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="home">
@@ -32,36 +107,78 @@
 
     <section id="products">
         <h2>Our Products</h2>
-        <ul>
-            <li>Curtains</li>
-            <li>Blinds</li>
-            <li>Wallpapers</li>
-            <li>Decorative Items</li>
-        </ul>
+        <div class="product-list">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://via.placeholder.com/200x150?text=Aligator+Clips" alt="Aligator Clips">
+                </div>
+                <div class="product-info">
+                    <h3>Aligator & Tictac Clips</h3>
+                    <p>Rs. 150</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://via.placeholder.com/200x150?text=Banana+Clips" alt="Banana Clips">
+                </div>
+                <div class="product-info">
+                    <h3>Banana Clips</h3>
+                    <p>Rs. 200</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://via.placeholder.com/200x150?text=Bangles" alt="Bangles">
+                </div>
+                <div class="product-info">
+                    <h3>Bangles</h3>
+                    <p>Rs. 300</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://via.placeholder.com/200x150?text=Kada+Bangle" alt="Broad Kada Bangle">
+                </div>
+                <div class="product-info">
+                    <h3>Broad Kada Bangle</h3>
+                    <p>Rs. 450</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="about">
         <h2>About Us</h2>
-        <p>Chidambaram Covering and Fancy Store has been serving the community with quality products and excellent customer service for over 20 years.</p>
+        <p>Chidambaram Covering and Fancy Store has been serving the community with quality products and excellent customer service for over 20 years. We take pride in offering a wide range of products to meet all your fancy needs.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
         <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
             <button type="submit">Send</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 Chidambaram Covering and Fancy Store. All rights reserved.</p>
+        <p>&copy; 2025 CC & FS. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
